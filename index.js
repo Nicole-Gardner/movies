@@ -1,73 +1,36 @@
-    {
-      "Title": "Harry Potter and the Deathly Hallows: Part 2",
-      "Year": "2011",
-      "imdbID": "tt1201607",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BOTA1Mzc2N2ItZWRiNS00MjQzLTlmZDQtMjU0NmY1YWRkMGQ4XkEyXkFqcGc@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Harry Potter and the Sorcerer's Stone",
-      "Year": "2001",
-      "imdbID": "tt0241527",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Harry Potter and the Prisoner of Azkaban",
-      "Year": "2004",
-      "imdbID": "tt0304141",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Harry Potter and the Chamber of Secrets",
-      "Year": "2002",
-      "imdbID": "tt0295297",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNGJhM2M2MWYtZjIzMC00MDZmLThkY2EtOWViMDhhYjRhMzk4XkEyXkFqcGc@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Harry Potter and the Goblet of Fire",
-      "Year": "2005",
-      "imdbID": "tt0330373",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTIzNzUzOTk2NV5BMl5BanBnXkFtZTYwNTI4MDg2._V1_SX300.jpg"
-    },
-    {
-      "Title": "Harry Potter and the Order of the Phoenix",
-      "Year": "2007",
-      "imdbID": "tt0373889",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BYWJmM2M1YzItMjY1Ni00YzRmLTg5YWYtNDFmNTJjNzQ0ODkyXkEyXkFqcGc@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Harry Potter and the Deathly Hallows: Part 1",
-      "Year": "2010",
-      "imdbID": "tt0926084",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Harry Potter and the Half-Blood Prince",
-      "Year": "2009",
-      "imdbID": "tt0417741",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Harry Potter 20th Anniversary: Return to Hogwarts",
-      "Year": "2022",
-      "imdbID": "tt16116174",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BZTNhNjg1NWItZThkNC00N2JiLTkzOTgtNzZjYzAyYTQ4OTEwXkEyXkFqcGc@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Harry Potter and the Forbidden Journey",
-      "Year": "2010",
-      "imdbID": "tt1756545",
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNDM0YzMyNGUtMTU1Yy00OTE2LWE5NzYtZDZhMTBmN2RkNjg3XkEyXkFqcGdeQXVyMzU5NjU1MDA@._V1_SX300.jpg"
-    }
-  ],
-  "totalResults": "163",
-  "Response": "True"
+    const movies = [
+  {
+    Title: "Harry Potter and the Deathly Hallows: Part 2",
+    Year: "2011",
+    Poster: "..."
+  },
+  {
+    Title: "Harry Potter and the Sorcerer's Stone",
+    Year: "2001",
+    Poster: "..."
+  }
+];
+
+function renderMovies(movieList) {
+  const moviesWrapper = document.querySelector(".movies");
+
+  moviesWrapper.innerHTML = movieList
+    .map(movie => `
+      <div class="movie">
+        <img class="movie__poster" src="${movie.Poster}" alt="${movie.Title}">
+        <div class="movie__info">
+          <h2>${movie.Title}</h2>
+          <p>Release Year: ${movie.Year}</p>
+          <p>Genre: Fantasy</p>
+        </div>
+      </div>
+    `)
+    .join("");
+}
+
+function sortOldestToNewest() {
+  movies.sort((a, b) => Number(a.Year) - Number(b.Year));
+  renderMovies(movies);
+}
+
+renderMovies(movies);
