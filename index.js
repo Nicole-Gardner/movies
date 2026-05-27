@@ -1,4 +1,4 @@
-const searchInput = document.querySelector(".search__input");
+const searchInput = document.querySelector("#searchInput");
 const movieContainer = document.querySelector(".movie__container");
 
 async function fetchMovies(searchValue = "harry potter") {

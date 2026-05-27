@@ -78,12 +78,18 @@ p {
 }
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
-  .nav__container {
-    flex-direction: column;
-    gap: 16px;
-  }
   .movie__container {
-    gap: 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .movie__poster {
+    width: 100%;
+    max-width: 250px;
   }
 }
 /* SMALL PHONES, LARGE SMARTPHONES */
