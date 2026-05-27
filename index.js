@@ -1,4 +1,4 @@
-async function fetchMovies(searchValue = "harry potter") {
+async function fetchMovies(searchValue = s=$searchValue) {
   const res = await fetch(
     `https://www.omdbapi.com/?apikey=51106b2b&s=${searchValue}`
   );
