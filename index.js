@@ -12,7 +12,7 @@
 ];
 
 function renderMovies(movieList) {
-  const moviesWrapper = document.querySelector(".movies");
+  const moviesWrapper = document.querySelector(" .movie__container");
 
   moviesWrapper.innerHTML = movieList
     .map(movie => `
