@@ -58,19 +58,8 @@ p {
 
 .movie__container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 32px;
-}
-.movie {
-  display: flex;
-  align-items: center;
   gap: 24px;
-  margin-bottom: 32px;
-}
-
-.movie__info {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  margin-top: 32px;
 }

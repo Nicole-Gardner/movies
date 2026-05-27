@@ -1,5 +1,5 @@
 async function fetchMovies() {
-  const res = await fetch("https://www.omdbapi.com/?apikey=51106b2b&s=harry");
+  const res = await fetch("https://www.omdbapi.com/?apikey=51106b2b&s=harry%20potter");
   const data = await res.json();
 
 data.Search.forEach(movie => {
