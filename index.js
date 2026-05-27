@@ -7,7 +7,7 @@
   {
     Title: "Harry Potter and the Sorcerer's Stone",
     Year: "2001",
-    Poster: "..."
+    Poster: "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg"
   }
 ];
 

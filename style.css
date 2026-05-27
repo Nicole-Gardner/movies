@@ -32,16 +32,17 @@ h2 {
   align-items: center;
   margin: 0 auto;
 }
-.nav__links {
-  margin-right: 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #7342d6;
-  font-weight: bold;
-  padding: 8px;
-  text-align: right;
-  justify-content: space-between;
+.nav__list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
 }
+
+.nav__link {
+  text-decoration: none;
+  color: #7342d6;
+}
+
 
 .nav__link:hover {
   text-decoration: underline;
@@ -67,10 +68,7 @@ p {
   gap: 24px;
   margin-bottom: 32px;
 }
-.movie__poster {
-  width: 200px;
-  border-radius: 8px;
-}
+
 .movie__info {
   display: flex;
   flex-direction: column;
