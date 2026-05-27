@@ -76,3 +76,10 @@ p {
 .movie__info {
   margin-top: 12px;
 }
+
+@media (max-width: 768px) {
+  .movie__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
