@@ -28,7 +28,6 @@ h2 {
   justify-content: flex-end;
   padding: 24px;
   background-color: #7342d6;
-  padding: 24px;
 }
 
 .nav__list {
@@ -86,6 +85,10 @@ p {
 footer {
   background-color: #7342d6;
   padding: 24px;
+  
+}
+footer p {
+  color: white;
 }
 
 .search__container {
