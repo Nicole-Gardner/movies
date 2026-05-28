@@ -23,15 +23,12 @@ h2 {
 
 
 
-.nav__container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 24px;
+.nav__container { 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+  justify-content: flex-end;
+  padding: 24px;
 }
+
 .nav__list {
   display: flex;
   gap: 16px;
@@ -88,10 +85,7 @@ p {
   display: block;
 }
 
-#searchInput:focus {
-  outline: none;
-  border-color: #7342d6;
-}
+
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {

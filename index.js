@@ -1,5 +1,6 @@
 const sortFilter = document.querySelector("#sortFilter");
 const searchInput = document.querySelector("#searchInput");
+const sortFilter = document.querySelector("#sortFilter");
 const moviecontainer = document.querySelector(".movie__container");
 
 async function fetchMovies(searchValue = "harry potter") {
