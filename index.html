@@ -11,7 +11,7 @@
 <body>
    
      <section id="landing">
-        <nav>
+        <nav class="nav__container">
             <ul class="nav__list">
   <li><a href="#" class="nav__link">Home</a></li>
   <li><a href="#" class="nav__link">Movies</a></li>
@@ -19,6 +19,11 @@
              
         </nav>
         <input type="text"  id="searchInput" placeholder="Search movies...">
+        <select id="sortFilter">
+  <option value="">Sort by year</option>
+  <option value="newest">Newest first</option>
+  <option value="oldest">Oldest first</option>
+</select>
         <h1>Movies</h1>
         <p>Welcome to the Movies app!</p>
     <p>Check out our collection of amazing movies!</p>

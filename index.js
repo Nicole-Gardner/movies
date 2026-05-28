@@ -1,5 +1,6 @@
+const sortFilter = document.querySelector("#sortFilter");
 const searchInput = document.querySelector("#searchInput");
-const movieContainer = document.querySelector(".movie__container");
+const moviecontainer = document.querySelector(".movie__container");
 
 async function fetchMovies(searchValue = "harry potter") {
   const res = await fetch(
@@ -15,6 +16,14 @@ async function fetchMovies(searchValue = "harry potter") {
     movieContainer.innerHTML = "<p>No movies found.</p>";
     return;
   }
+  let movies = data.Search;
+if (sortFilter.value === "newest") {
+  movies.sort((a, b) => b.Year - a.Year);
+}
+if (sortFilter.value === "oldest") {
+  movies.sort((a, b) => a.Year - b.Year);
+}
+movies.forEach((movie) => {
 
   data.Search.forEach((movie) => {
     movieContainer.innerHTML += `
