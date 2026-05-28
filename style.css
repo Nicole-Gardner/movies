@@ -27,6 +27,8 @@ h2 {
   display: flex;
   justify-content: flex-end;
   padding: 24px;
+  background-color: #7342d6;
+  padding: 24px;
 }
 
 .nav__list {
@@ -35,10 +37,12 @@ h2 {
   list-style: none;
 }
 
-.nav__link {
-  text-decoration: none;
-  color: #7342d6;
+
+  .nav__link {
+  color: white;
+  font-weight: 700;
 }
+
 
 
 .nav__link:hover {
@@ -63,6 +67,11 @@ p {
 .movie {
   width: 220px;
   text-align: center;
+  margin: 20px;
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .movie__poster {
@@ -74,15 +83,26 @@ p {
   margin-top: 12px;
 }
 
-
+footer {
+  background-color: #7342d6;
+  padding: 24px;
+}
 
 .search__container {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin: 24px 0;
+  margin: 32px 0;
 }
 
+#searchInput,
+#sortFilter {
+  padding: 12px 16px;
+  border: 2px solid #7342d6;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
 
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
